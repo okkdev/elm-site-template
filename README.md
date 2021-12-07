@@ -83,3 +83,15 @@ Contains the Elm source code with `Main.elm` entrypoint.
 Contains static files that don't need compiling including the `index.html` entrypoint.\
 Contents get copied into the `public/` directory on build.\
 Add your static files like pictures and fonts here.
+
+## Deploy
+
+To deploy run:
+
+```sh
+yarn build
+# or
+npm run build
+```
+
+And deploy the contents of the created `public/` directory to your webserver or favorite static site hoster.
