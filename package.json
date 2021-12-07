@@ -1,0 +1,22 @@
+{
+  "name": "elm-site-template",
+  "version": "1.0.0",
+  "description": "elm site template",
+  "scripts": {
+    "format": "elm-format src/ --yes",
+    "gen": "elm-tailwind-modules --tailwind-config tailwind.config.js --dir ./gen",
+    "build": "yarn gen && mkdir -p public && rm -rf public/* && cp -R static/. public/ && elm make src/Main.elm --optimize --output=./public/dist/main.js",
+    "dev": "mkdir -p live && rm -rf live/* && cp -R static/. live/ && elm-live src/Main.elm --dir=live --start-page=index.html -- --debug --output=live/dist/main.js"
+  },
+  "main": "index.js",
+  "author": "@okkdev",
+  "license": "MIT",
+  "devDependencies": {
+    "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
+    "elm-live": "^4.0.2",
+    "elm-tailwind-modules": "^0.3.2",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
+}
