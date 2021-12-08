@@ -28,7 +28,8 @@ npm run <script>
 
 ### `gen`
 
-Generates Tailwind modules into the `gen/` directory.
+Generates Tailwind modules into the `gen/` directory.\
+More about Tailwind Modules here: https://github.com/matheus23/elm-tailwind-modules
 
 ### `format`
 
@@ -36,7 +37,8 @@ Formats the Elm files in the `src/` directory.
 
 ### `dev`
 
-Creates `live/` directory and copies `static/` content into it. Compiles `src/Main.elm` into `live/dist/` and starts live server in debug mode.
+Creates `live/` directory and copies `static/` content into it. Compiles `src/Main.elm` into `live/dist/` and starts live server in debug mode.\
+More about Elm Live here: https://github.com/wking-io/elm-live
 
 ### `build`
 
