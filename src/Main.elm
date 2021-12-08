@@ -3,7 +3,7 @@ module Main exposing (..)
 import Browser
 import Css
 import Css.Global
-import Html.Styled as Html exposing (Html, button, div, text)
+import Html.Styled as Html exposing (button, div, text)
 import Html.Styled.Attributes exposing (css)
 import Html.Styled.Events exposing (onClick)
 import Tailwind.Utilities as Tw
@@ -13,6 +13,7 @@ import Tailwind.Utilities as Tw
 -- MAIN
 
 
+main : Program () Model Msg
 main =
     Browser.document
         { init = init
@@ -61,7 +62,7 @@ update msg model =
 
 
 subscriptions : Model -> Sub Msg
-subscriptions model =
+subscriptions _ =
     Sub.none
 
 
