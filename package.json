@@ -10,7 +10,7 @@
     "postinstall": "elm-tooling install"
   },
   "devDependencies": {
-    "elm-live": "^4.0.0-rc.1",
+    "elm-live": "^4.0.2",
     "elm-tailwind-modules": "^0.3.2",
     "elm-tooling": "^1.7.0",
     "postcss": "^8.4.4",
